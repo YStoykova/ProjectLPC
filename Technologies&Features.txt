@@ -14,5 +14,7 @@ Feature improvements:
 •  Design - implement Lopoca style or create a new one responsive design
 •  Add an error logger library (e.g. ELMAH)
 •  Add UnitTest project.
+•  Add Role implementation
+
 
 

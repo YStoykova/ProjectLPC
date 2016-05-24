@@ -1,6 +1,6 @@
 Steps to prepare the source code to build properly:
 
-Prerequisites : 
+Prerequisites: 
 -------------------
 Installed ASP.NET Framework 4.5 (https://www.microsoft.com/en-us/download/details.aspx?id=30653)
 The Lopoca folder contains the Visual Studio 2013 solution file named Lopoca.sln
@@ -20,12 +20,12 @@ The solution file contains follow folders:
 Actions:
 --------------------
 Build the solution. The solution uses Nuget to respore packages from packages config files.
-Set the Lopoca.Web project as start up project
+Set the Lopoca.Web project as startup project
 --------------------
 
 Steps to create and initialize the database:
 
-Prerequisites : 
+Prerequisites: 
 -------------------
 You could see this link bellow before you start to initialize the database and the web application.
 http://www.asp.net/mvc/overview/deployment/visual-studio-web-deployment/deploying-to-iis
@@ -36,5 +36,11 @@ The solution contains two sql script files:
 2. CreateLopocaAppPoolUser.sql
 Please run the first script number 1.CreateLopocaDB.sql and then 2.CreateLopocaAppPoolUser.sql
 
+Important:
 
-
+The first user who is register to the site set to Admin role. Other users are User role
+The password requirements:
+1. min 6 length
+2. one non letter or digit
+3. one lower case letter
+4. one upper case letter
