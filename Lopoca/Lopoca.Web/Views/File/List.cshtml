@@ -1,0 +1,61 @@
+﻿@model IEnumerable<FileViewModel>
+@{
+    ViewBag.Title = "Files";
+}
+<h2>Uploaded files</h2>
+@if(Model != null && Model.Count() > 0)
+{ 
+<table id="files" class="table table-striped">
+    <thead>
+        <tr>
+            <th>File Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var file in Model)
+        {
+            <tr>
+                <td>
+                    @file.Name
+
+                    @if (file.IsUserNameDisplay)
+                    {
+                        <text> uploaded by:</text> @file.UserName
+                    }
+                </td>
+                <td>
+                    <button type="button" class="btn btn-default file-selector" data-fileid="@file.Id">Open</button>
+                    <button type="button" class="btn btn-default history-selector" data-toggle="modal" data-target="#historylist" data-fileid="@file.Id">History</button>
+                    @if (file.IsDeleteAllowed)
+                    {
+                        <button type="button" class="btn btn-default delete-selector" data-fileid="@file.Id">Delete</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+<div id="historylist" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">File History</h4>
+            </div>
+            <div class="modal-body">
+                <div id="historyPartialView">@Html.Action("History")</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+{
+    @Scripts.Render("~/bundles/app")
+}
+
+

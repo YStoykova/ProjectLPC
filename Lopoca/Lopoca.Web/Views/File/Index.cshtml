@@ -1,0 +1,22 @@
+﻿@model Lopoca.Web.Models.UploadViewModel
+@{
+    ViewBag.Title = "Upload a File";
+}
+
+<h2>Upload a File</h2>
+
+@using (Html.BeginForm("Upload", "File", null, FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-inline" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.EditorFor(m => m.File)
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Upload" class="btn btn-default" />
+        </div>
+    </div>
+}
+
+

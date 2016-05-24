@@ -1,0 +1,27 @@
+﻿@model IEnumerable<FileHistoryViewModel>
+@if (Model != null)
+{
+    <table id="files" class="table table-striped">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Action Time</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var history in Model)
+            {
+                <tr>
+                    <td>
+                        @history.UserName
+                    </td>
+                    <td>@history.ActionTime</td>
+                    <td>
+                        @history.StatusTypeName
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

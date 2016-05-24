@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Web", "2. Web", "{C66A88FB-39F1-40CF-8CB7-FE880F595D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lopoca.Web", "Lopoca.Web\Lopoca.Web.csproj", "{C9F9E936-66DD-4589-B8B5-65E169F55103}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Data", "4. Data", "{7E2B268B-1517-4B0E-9E0B-3C5D1B63C830}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Core", "3. Core", "{2D71D891-4AD1-418F-B7F6-DD8DA3E430E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lopoca.Data", "Lopoca.Data\Lopoca.Data.csproj", "{2FC0C214-7526-4029-8A78-770A0E722C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lopoca.Core", "Lopoca.Core\Lopoca.Core.csproj", "{35C8EFD3-70F8-4905-AA86-59501F54EC67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. SQL", "1. SQL", "{835F8421-8373-4898-B14B-3C2BD0B6AAF1}"
+	ProjectSection(SolutionItems) = preProject
+		..\1. CreateLopocaDB.sql = ..\1. CreateLopocaDB.sql
+		..\2. CreateLopocaAppPoolUser.sql = ..\2. CreateLopocaAppPoolUser.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1DBF1ABA-D5C9-49D4-9D56-A7A490B9E811}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9F9E936-66DD-4589-B8B5-65E169F55103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F9E936-66DD-4589-B8B5-65E169F55103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F9E936-66DD-4589-B8B5-65E169F55103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F9E936-66DD-4589-B8B5-65E169F55103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC0C214-7526-4029-8A78-770A0E722C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC0C214-7526-4029-8A78-770A0E722C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC0C214-7526-4029-8A78-770A0E722C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC0C214-7526-4029-8A78-770A0E722C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C8EFD3-70F8-4905-AA86-59501F54EC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C8EFD3-70F8-4905-AA86-59501F54EC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C8EFD3-70F8-4905-AA86-59501F54EC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C8EFD3-70F8-4905-AA86-59501F54EC67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9F9E936-66DD-4589-B8B5-65E169F55103} = {C66A88FB-39F1-40CF-8CB7-FE880F595D75}
+		{2FC0C214-7526-4029-8A78-770A0E722C0D} = {7E2B268B-1517-4B0E-9E0B-3C5D1B63C830}
+		{35C8EFD3-70F8-4905-AA86-59501F54EC67} = {2D71D891-4AD1-418F-B7F6-DD8DA3E430E1}
+	EndGlobalSection
+EndGlobal
