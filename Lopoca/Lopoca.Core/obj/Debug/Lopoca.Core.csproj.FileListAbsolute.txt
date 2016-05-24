@@ -1,9 +1,0 @@
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\bin\Debug\Lopoca.Core.dll
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\bin\Debug\Lopoca.Core.pdb
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\bin\Debug\Lopoca.Data.dll
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\bin\Debug\EntityFramework.dll
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\bin\Debug\Lopoca.Data.pdb
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\bin\Debug\EntityFramework.xml
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\obj\Debug\Lopoca.Core.csprojResolveAssemblyReference.cache
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\obj\Debug\Lopoca.Core.dll
-D:\LopocaGitHub\ProjectLPC\Lopoca\Lopoca.Core\obj\Debug\Lopoca.Core.pdb
