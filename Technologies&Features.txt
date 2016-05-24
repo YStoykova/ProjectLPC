@@ -1,0 +1,18 @@
+•	C#
+•	MVC Web Application with ASP.NET Framework 4.5
+•	JavaScript, JQuery, Bootstrap libraries
+•	Entity Framework 6 with using Reverse Engineer Code First (EF Power Tools)
+•	Repository pattern
+•	Dependency injection – Ninject
+•	MS SQL Server 2008
+•	Cyborg Bootstrap Theme(https://bootswatch.com/cyborg/)
+•	IIS7+
+
+
+
+Feature improvements:
+•  Design - implement Lopoca style or create a new one responsive design
+•  Add an error logger library (e.g. ELMAH)
+•  Add UnitTest project.
+
+
