@@ -8,9 +8,10 @@ namespace Lopoca.Web.Models
     {
         [StringLength(128)]
         public string FileName { get; set; }
-        [Required]
-        [ValidateFile(ErrorMessage = "Please select a CSV file and the file should be smaller than 4 MB")]
+
+        [Required] 
         [DataType(DataType.Upload)]
+        [ValidateFile(ErrorMessage = "Please select a CSV file and the file should be smaller than 4 MB")]
         public HttpPostedFileBase File { get; set; }
 
         public Guid FileId { get; set; }      

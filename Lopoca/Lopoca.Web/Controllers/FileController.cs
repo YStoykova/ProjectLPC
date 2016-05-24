@@ -68,7 +68,7 @@ namespace Lopoca.Web.Controllers
                     model.FileId = Guid.NewGuid();
                     model.UserId = userId;
                     model.FileName = Path.GetFileNameWithoutExtension(model.File.FileName);
-                    model.FullPath = "~/App_Data/" + model.FileId + Path.GetExtension(model.File.FileName);
+                    model.FullPath = "~/Data/" + model.FileId + Path.GetExtension(model.File.FileName);
 
                     LopocaFile file = new LopocaFile
                     {
@@ -178,8 +178,8 @@ namespace Lopoca.Web.Controllers
             Guid fileGuid = new Guid(fileId);
             var userId = System.Web.HttpContext.Current.User.Identity.GetUserId();
             fileManager.Delete(fileGuid, userId);
-            
-            return RedirectToAction("List");
+
+            return JavaScript("location.reload(true)");
         }
     }
 }

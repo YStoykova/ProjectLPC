@@ -46,15 +46,12 @@ function loadHistory(element) {
 function deleteFile(element) {
 
     $.ajax({
-        method: "Post",
+        method: "POST",
         url: Root + "File/Delete",
         data: { fileId: $(element).data("fileid") },
         cache: false,
         async: true,
-        success: function (result) {        
+        success: function () {
         }
     });
 }
-
-function refreshFileList()
-{ }

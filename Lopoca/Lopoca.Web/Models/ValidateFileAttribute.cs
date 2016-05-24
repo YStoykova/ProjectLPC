@@ -22,16 +22,13 @@ namespace Lopoca.Web.Models
             try
             {
                 var validFileTypes = new string[]{
-                    "text/csv",
-                    "text/plain",
+                    "text/csv",                  
                     "application/csv",
                     "text/comma-separated-values",
                     "application/excel",
                     "application/vnd.ms-excel",
-                    "application/vnd.msexcel",
-                    "text/anytext",
-                    "application/octet-stream",
-                    "application/txt"
+                    "application/vnd.msexcel"
+                   
                 };
                 if (validFileTypes.Contains(file.ContentType))
                 {

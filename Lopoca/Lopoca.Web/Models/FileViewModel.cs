@@ -36,6 +36,15 @@ namespace Lopoca.Web.Models
             }
   
         }
-        public bool IsUserNameDisplay { get { return false; } }
+
+        /// <summary>
+        /// Display user name if the user is in Admin role
+        /// </summary>
+        public bool IsUserNameDisplay 
+        { 
+            get 
+            { return IsDeleteAllowed; 
+            } 
+        }
     }
 }
