@@ -199,8 +199,11 @@
     <Content Include="Content\bootstrap.cyborg.css" />
     <Content Include="Content\bootstrap.cyborg.min.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\casino-profits.jpg" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\lopoca.png" />
+    <Content Include="Content\images\online-gaming-site.jpg" />
+    <Content Include="Content\images\poker-earn-rake.jpg" />
     <Content Include="Data\empty.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -264,6 +267,7 @@
     <Content Include="Views\File\Index.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Upload.cshtml" />
     <Content Include="Views\File\History.cshtml" />
+    <Content Include="Views\Home\_carousel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
